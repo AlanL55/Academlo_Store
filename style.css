@@ -1,0 +1,363 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    overflow-x:hidden;
+}
+/* El primer section de titulo con las imagenes */
+.title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+}
+.logo{
+    cursor: pointer;
+    width: 130px;
+    height: 100%;
+}
+/* El menu desplegable del carrito */
+.menu_cart{
+    background-color: #eb4a5a;
+    position: absolute;
+    top: 50px;
+    width: 32%;
+    height: calc(92vh - 9px);
+    right: -101%;
+    padding: 20px;
+    transition: right 500ms ease;
+    border-radius: 10px;
+    z-index: 9;
+}
+.menu_cart.active{
+    right: 0;
+    transition: right 500ms ease;
+    z-index: 9;
+}
+.cart{
+    width: 50%;
+}
+.thrash{
+    width: 20px;
+}
+.cart_product{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.cart_products{
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background-color: white;
+    height: 80%;
+}
+.cart_product_image{
+    display: flex;
+    justify-content: center;
+}
+.cart_png{
+    width: 50%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.less,
+.plus {
+    font-size: 25px;
+    cursor: pointer;
+}
+.cart_counter{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cart_total{
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.cart_total_info{
+    width: 80%;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    color: white;
+}
+.info_amount{
+    background-color: #eb4a5a;
+    padding: 5px;
+    border-radius: 5px;
+}
+.info_total{
+    background-color: #eb4a5a;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn_buy{
+    border: none;
+    background-color: #eb4a5a;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.shopping_cart{
+    width: 90px;
+    height: 100%;
+    z-index: 2;
+}
+.header_cart span{
+    position: absolute;
+    height: 20px;
+    top: 13px;
+    right: 36px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+/* El lado izquierdo con el texto y las imagenes */
+.square{
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 7%;
+    margin: 0 ;
+    display: flex;
+    flex-direction: row;
+}
+.inside_square{
+    width: 70%;
+}
+.main_title{
+    background-color: #eb4a5a;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-size: 120%;
+    border-radius: 5px;
+}
+.Return_title{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 15px;
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Aqui empieza la parte desde los hoodies de academlo */
+.description{
+    background-color: #eb4a5a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    font-size: 200%;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 240px;
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 150%;
+    margin-top: 25px;
+}
+.text{
+    text-align: center;
+    font-size: 100%;
+    padding: 18px;
+    padding-left: 0;
+}
+.colors{
+    text-align: center;
+    font-size: 150%;
+}
+.colors{
+    text-align: left;
+    font-size: 30px;
+}
+.display_box{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.hoodie_box{
+    border: 3px solid #eb4a5a;
+    border-radius: 5px 5px 5px 5px ;
+    position: inherit;
+    gap: 10px;
+    margin-top: 5px;
+    display: flex;
+    width: 92%;
+    height: 205px;
+    padding: 0px;
+    z-index: 1;
+}
+.product{
+    gap: 10px;
+    position: inherit;
+    display: flex;
+    width: 100%;
+    height: 205px;
+    padding: 0px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    z-index: 1;
+}
+.button{
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    background-color: #eb4a5a;
+    width: 125px;
+    height: 50px;
+    opacity: .8;
+    z-index: 2;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+.img_product{
+    width:125px;
+    height:125px;
+    transition: transform 800ms ease;
+    cursor: pointer;
+}
+.img_product:hover{
+    transform:scale(1.1) ;
+    transition: transform 800ms ease;
+}
+.size_box{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-left: 150px;
+}
+.guide{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+}
+.title_sign{
+    /* font-size: x-large; */
+    padding-top: 40px;
+    /* margin: 0; */
+}
+.guide_text{
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.sign{
+    cursor: pointer;
+    padding-top:10px;
+    padding-bottom: 1px;
+    width: 50px;
+    height: 60px;
+}
+.sizes_guide{
+    content-visibility: hidden;
+    border-radius: 5px;
+    background-color: #eb4a5a;
+    width: 0%;
+    height: 100px;
+    transition: 700ms ease-out ;
+}
+.sizes_guide.active{
+    content-visibility: visible;
+    padding-left: 11px;
+    padding-top: 9px;
+    background-color: #eb4a5a;
+    color: white;
+    width: 30%;
+    height: 130px;
+    transition: hidden ease-out ;
+}
+/* El cuadro de la derecha que da mas detalles del producto */
+.square_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    width: 0px;
+    height: 620px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.square_2.active{
+    /* padding-left: 20px; */
+    width: 80%;
+    visibility: visible;
+    transition: 600ms ease-in-out;
+}
+.red_square{
+    background-color:#eb4a5a;
+    width: 0%;
+    height: 0%;
+    font-size: small;
+    color: #f6f6f6;
+    text-align:center;
+    border-radius: 10px;
+}
+.red_square.active{
+    background-color:#eb4a5a;
+    width: 80%;
+    height: 90%;
+    color: #f6f6f6;
+    text-align:center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.red_square span{
+    color: aqua;
+}
+.display{
+    width: 100%;
+    height: 250px;
+    transform: scale(1.0);
+    transition: transform 700ms ease;
+}
+
+/* El pie de pagina */
+
+.fotter_texto{
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.email_button{
+    position:absolute;
+    top: 600px;
+    left: 370px;
+    text-align: center;
+    font-size:30px;
+    padding-top: 85px;
+}
+.email{
+    background-color: #eb4a5a;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 10px;
+}
+
