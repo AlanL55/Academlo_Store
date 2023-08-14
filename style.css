@@ -323,7 +323,7 @@ body{
 .red_square.active{
     background-color:#eb4a5a;
     width: 80%;
-    height: 90%;
+    height: 100%;
     color: #f6f6f6;
     text-align:center;
     padding: 5px;

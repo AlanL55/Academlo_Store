@@ -8,12 +8,31 @@
         height: 1350px;
     }
 
-    .menu_cart {
-        width: 50%;
+    .cart_total_info{
+        display: flex;
+        justify-content: space-evenly;
     }
-    
+    .menu_cart.active{
+        width: 60%;
+        height: 600px;
+    }
+    .info_total{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .info_amount{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .btn_buy{
+        padding: 5px;
+    }
+    .menu_cart {
+        width: 40%;
+    }
+
     .cart_products{
-        height: 95%;
+        height: 80%;
     }
 
 
@@ -61,6 +80,7 @@
     }
     .square{
         width: 100%;
+        height: 900px;
         padding: 0px;
         margin: 0 ;
         display: flex;
