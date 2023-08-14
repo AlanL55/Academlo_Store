@@ -45,6 +45,7 @@ body{
 }
 .thrash{
     width: 20px;
+    cursor: pointer;
 }
 .cart_product{
     border: 1px solid black;
@@ -98,12 +99,12 @@ body{
 }
 .info_amount{
     background-color: #eb4a5a;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
 }
 .info_total{
     background-color: #eb4a5a;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
 }
 .btn_buy{
@@ -111,7 +112,7 @@ body{
     border: none;
     background-color: #eb4a5a;
     color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 .shopping_cart{
