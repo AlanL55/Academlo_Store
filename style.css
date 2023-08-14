@@ -117,6 +117,7 @@ body{
     width: 90px;
     height: 100%;
     z-index: 2;
+    cursor:pointer
 }
 .header_cart span{
     position: absolute;
