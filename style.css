@@ -107,6 +107,7 @@ body{
     border-radius: 5px;
 }
 .btn_buy{
+    cursor: pointer;
     border: none;
     background-color: #eb4a5a;
     color: white;
@@ -166,7 +167,7 @@ body{
     font-size: 200%;
     border-radius: 10px;
     margin-top: 100px;
-    margin-left: 240px;
+    margin-left: 200px;
     margin-bottom: 10px;
 }
 .price{

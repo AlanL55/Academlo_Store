@@ -196,7 +196,7 @@ function buyCart(db){
         db.cart = {}
         window.localStorage.setItem('products', JSON.stringify(db.products));
         window.localStorage.setItem('cart', JSON.stringify(db.cart));
-        printProducts(db)
+        getImages(db)
         printToCart(db)
         totalCart(db)
     });
